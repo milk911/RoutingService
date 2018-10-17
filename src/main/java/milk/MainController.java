@@ -83,9 +83,9 @@ public class MainController {
     public String route(@CookieValue(value = "UserID", required = false) Cookie UserID) {
         if ( UserID == null)
             return "redirect:/login";
-        RoutingMachine.Routing(UserID.getValue(), pointsDAO);
+        String answer = RoutingMachine.Routing(UserID.getValue(), pointsDAO);
 
-        return "ok";
+        return answer;
     }
 
 

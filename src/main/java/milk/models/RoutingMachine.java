@@ -183,7 +183,7 @@ public class RoutingMachine {
         //PointsList.add(Points.get(p1));
         //PointsList.add(Points.get(p2));
 
-        return "";
+        return "ok";
     }
 
     private static void PrepareDistArray(List<List<Integer>> kr_dist, List<Point> PointsList) {
